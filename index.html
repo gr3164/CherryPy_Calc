@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="joey_css.css" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="img/full-scren2.jpg" alt="full-scren">
+        <div class="date-time">
+            <div class="time">
+                <span>Время: </span>
+                {Time:}
+            </div>
+            <div class="date">
+                <span>Дата: </span>
+                {Date:}
+            </div>
+        </div>
+
+        <div class="calc">
+            <div class="calc__title">Калькулятор</div>
+            <form class="calc__form" action='Post_Calc' method=post>
+                <input class="calc__num" type="number" name="num1" required>
+                <select class="calc__select" name="select1">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                    <option>%</option>
+                </select>
+                <input class="calc__num" type="number" name="num2" required>
+                <input class="calc__btn" type="submit" value="Ответ">
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
